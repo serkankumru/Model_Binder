@@ -26,7 +26,9 @@ namespace News
 
             //Model Binders
             ModelBinders.Binders.Add(typeof(NewsT),new NewModelBinder());
-            
+            System.Web.Mvc.ModelBinders.Binders.Add(typeof(Category),new CategoryModelBinder());
+
+
             
             //MyControllerFactory myController = new MyControllerFactory();
             //ControllerBuilder.Current.SetControllerFactory(myController);
